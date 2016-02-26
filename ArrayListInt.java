@@ -38,7 +38,7 @@ public class ArrayListInt
         numerosEnterosAñadidos = new int [(tamañoDelArray+1)];
         if (index >= 0 && index < (tamañoDelArray+1)){
             numerosEnterosAñadidos[index] = elemento;
-            for(int cont = 0; numerosEnterosAñadidos.length > cont; cont++){
+            for(int cont = 0; numerosEnterosAñadidos.length + 1 > cont; cont++){
                 numerosEnterosAñadidos[cont] = numerosEnterosAñadidos[cont+1];
             }
         }

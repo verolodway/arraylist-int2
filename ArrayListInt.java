@@ -18,8 +18,9 @@ public class ArrayListInt
      */
     public ArrayListInt(int cantidadDeNumerosDelArray)
     {
-        numerosEnteros = new int[cantidadDeNumerosDelArray];
+        numerosEnterosAñadidos = new int[cantidadDeNumerosDelArray];
         tamañoDelArray = cantidadDeNumerosDelArray;
+        cantidadDeNumerosDelArray = numerosEnterosAñadidos.length;
     }
 
     /**

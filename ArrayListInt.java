@@ -52,6 +52,7 @@ public class ArrayListInt
             numerosEnterosAñadidos[cont] = 0;
             tamañoDelArray = 0;
         }
+        numerosEnterosAñadidos = null;
     }
     
     /**
@@ -130,7 +131,13 @@ public class ArrayListInt
      * Método que devuelve el número de elementos de la colección.
      */
     public int size(){
-        int tamaño = numerosEnterosAñadidos.length;
+        int tamaño = 0;
+        if(numerosEnterosAñadidos == null){
+            tamaño = 0;
+        }
+        else{
+            tamaño = numerosEnterosAñadidos.length;
+        }
         return tamaño;
     }
 }
